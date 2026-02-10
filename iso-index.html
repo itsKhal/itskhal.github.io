@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO'S COLLECTION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500;600&family=Philosopher:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iso-style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+
+    <header>
+        <h1>ISO VERSES</h1>
+        <nav>
+            <div class="nav-link" onclick="showHome()">Home</div>
+            <div class="nav-link" onclick="showPoems()">Poems</div>
+            <button class="toggle-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="hero" id="homeSection">
+        <h2>The not Trash Collection</h2>
+        <p>A collection of verses — echoing longing, night, memory, and the beauty of the unseen.</p>
+        <button class="enter-btn" onclick="showPoems()">Enter Collection</button>
+    </section>
+
+    <!-- poem -->
+    <main class="poems" id="poemContainer"></main>
+
+    <footer>
+        © ISO COLLECTION
+    </footer>
+
+    <script src="iso-poems.js"></script>
+    <script src="iso-script.js"></script>
+</body>
+</html>
